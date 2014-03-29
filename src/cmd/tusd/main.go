@@ -79,8 +79,8 @@ func main() {
 	s := &http.Server{
 		Addr:           addr,
 		Handler:        nil,
-		ReadTimeout:    8 * time.Second,
-		WriteTimeout:   8 * time.Second,
+		ReadTimeout:    0 * time.Second,
+		WriteTimeout:   0 * time.Second,
 		MaxHeaderBytes: 0,
 	}
 
